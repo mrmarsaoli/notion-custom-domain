@@ -8,6 +8,8 @@ const {
   GA_TRACKING_ID,
 } = process.env;
 
+console.log(PAGE_URL)
+
 const { origin: pageDomain, pathname: pagePath } = new URL(PAGE_URL);
 const pageId = path.basename(pagePath).match(/[^-]*$/);
 
